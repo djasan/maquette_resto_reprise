@@ -82,8 +82,8 @@ h1 {
   flex-direction: row-reverse;
 }
 /* Pour appeller des elements enfants (et eux uniquement)
-à l'intéreiru d'un parent j'appelle en premier 
-le parent puis un espace pluis ses enfants */
+à l'intérieur d'un parent j'appelle en premier 
+le parent puis un espace puis ses enfants */
 #about div,#menu div{
   border:1px red solid;
   width: 47%;
