@@ -1,0 +1,118 @@
+/* Importation des fonts */
+@font-face {
+  /* Creation d'un raccourci */
+  font-family: "playfairDR";
+  src: url(../font/PlayfairDisplay-Regular.ttf);
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "playfairDR", serif;
+}
+img,input{
+  width: 100%;
+}
+/* Pour appeler l'id Logo j'utilise le selecteur id# et son nom logo */
+#logo {
+  /* color: rgb(255, 0, 0); */
+  padding: 1rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+/*  Pour appeler un element HTML dans un selecteur j'utilise son nom */
+nav {
+  display: flex;
+  /* Pour gerer l'alignement vertical des enfants de ma nav j' utilise align-items: ; */
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 11px 5px -6px rgba(0, 0, 0, 0.76);
+  -webkit-box-shadow: 0px 11px 5px -6px rgba(0, 0, 0, 0.76);
+  -moz-box-shadow: 0px 11px 5px -6px rgba(0, 0, 0, 0.76);
+  background-color: rgba(255, 255, 255, 0.854);
+  /* Le z-index ne fonctionne pas avec
+  une position static(position par defaut) */
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 55px;
+  top: 0;
+  
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+/* n'est pas utile car applicable à ul
+li {
+  list-style-type: none;
+} */
+li {
+  padding: 16px;
+}
+
+#img-header {
+  background-image: url('../img/hamburger.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  align-items: flex-end;
+  margin-top: 55px;
+}
+
+h1 {
+  padding: 1rem;
+  font-family: 'playfairDR';
+}
+/* MAIN */ 
+/* SECTION ABOUT */
+#about,#menu{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+}
+#menu{
+  flex-direction: row-reverse;
+}
+/* Pour appeller des elements enfants (et eux uniquement)
+à l'intéreiru d'un parent j'appelle en premier 
+le parent puis un espace pluis ses enfants */
+#about div,#menu div{
+  border:1px red solid;
+  width: 47%;
+}
+#about h2,#about h3{
+  text-align: center;
+}
+#about h3{
+  font-size: 1rem;
+}
+#about .premierP{
+  font-weight: 900;
+  margin: 1rem 0;
+}
+#about span{
+  background-color: rgb(198, 198, 198);
+}
+
+#contact{
+  width: 70%;
+  margin: auto;
+}
+#contact input{
+  border: none;
+  border-bottom: 0.5px solid grey;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+}
+#contact .send{
+  width: fit-content;
+  border: none;
+}
